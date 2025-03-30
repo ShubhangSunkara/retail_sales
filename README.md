@@ -121,7 +121,7 @@ FROM ranked_average
 where rnk=1;
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**:
 ```sql
 with ranked_customers as 
 (select customer_id, sum(total_sale) as sales , rank() over(order by sum(total_sale)desc)rnk 
