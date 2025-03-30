@@ -140,7 +140,7 @@ group by 1
 order by 1
 ```
 
-10. **Write a SQL query to create each shift and number of orders (Example Morning <12, Afternoon Between 12 & 17, Evening >17)**:
+10. **Write a SQL query to create each shift and number of orders**:
 ```sql
 with cte as (select *,
 case 
